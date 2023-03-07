@@ -1,6 +1,6 @@
 h1 {
     color: #fff;
-    background:rgb(69, 196, 132);
+    background:rgb(121, 131, 224);
     font-size: 1.6em;
     font-family: sans-serif;
     padding: 20px;
@@ -24,5 +24,25 @@ h1 {
   
   }
 
+  .menu li {
+    list-style-type: none ;       /* Suppression des puces */
+}
+.menu a {
+  display:block;                /* Transformation en block */
+  min-width: 120px;             /* Largeur minimale des liens */   
+  
+  margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+  padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+  text-align: center;           /* Centrage du texte */   
+  background-color: #27ad44;    /* Couleur d'arrière-plan */
+  color: #fff;                  /* Couleur du texte */
+  text-decoration: none;        /* Suppression du soulignement */
+  border: 1px solid #fff;       /* Ajout d'une bordure */
+  border-radius: 4px;           /* Arrondis des bordures */
+}
 
-   
+.menu a:hover {
+  background-color: #a3c3e7;
+  color: #ffe843;
+  border-color: #ffe843;
+}
