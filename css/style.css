@@ -1,6 +1,6 @@
 h1 {
-    color: #fff;
-    background:rgb(121, 131, 224);
+    color: #c79c9c;
+    background:rgb(37, 35, 37);
     font-size: 1.6em;
     font-family: sans-serif;
     padding: 20px;
@@ -13,7 +13,7 @@ h1 {
   }
 
    body{
-    background-color: rgb(206, 183, 206);
+    background-color: rgb(166, 188, 212);
    }
    
    ul{
