@@ -21,16 +21,16 @@
   margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
   padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
   text-align: center;           /* Centrage du texte */   
-  background-color:rgb(35, 163, 157);    /* Couleur d'arrière-plan */
-  color: #fff;                  /* Couleur du texte */
+  background-color:rgb(42, 162, 192);    /* Couleur d'arrière-plan */
+  color: #0c0303;                  /* Couleur du texte */
   text-decoration: none;        /* Suppression du soulignement */
   border: 1px solid #fff;       /* Ajout d'une bordure */
   border-radius: 4px;           /* Arrondis des bordures */
 }
 
 .menu a:hover {
-  background-color: #a3c3e7;
-  color: #ffe843;
+  background-color: #d41323;
+  color: #080803;
   border-color: #ffe843;
 }
 table, th, td {
@@ -91,5 +91,5 @@ footer{
 
 style img{
   width: 300px;
-  height: 300px;
+  height: ;
 }
