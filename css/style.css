@@ -80,16 +80,110 @@ p{
 }
 
 table{
-  
   text-align: center;
   margin: auto;
 }
-
 footer{
   text-align: center;
 }
 
 style img{
   width: 300px;
-  height: ;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+@media(max-width:768px){
+  .menu ul{
+  flex-direction: column;
+  align-items: center;
+  }
+}
+.dark-mode {
+  background-color: blueviolet;
+  color: white;
+  
+}
+body{
+  transition: 500ms ease-in-out;
+}
+
+.dark-mode div{
+  border: 5px solid rgb(42, 162, 192) ;
+  text-align: center;
+  font-size: 35px;
+  } 
+
+button{
+  display:block;                /* Transformation en block */
+  min-width: 120px;             /* Largeur minimale des liens */   
+  
+  margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+  padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+  text-align: center;           /* Centrage du texte */   
+  background-color:rgb(42, 162, 192);    /* Couleur d'arrière-plan */
+  color:black;                  /* Couleur du texte */
+  text-decoration: none;        /* Suppression du soulignement */
+  border: 1px solid #fff;       /* Ajout d'une bordure */
+  border-radius: 4px; 
+}
+.dark-mode button{
+  color: white;
+  background-color:blueviolet ;
+
+}
+.dark-mode ul{
+  background-color:rgb(42, 162, 192) ;
+} 
+.dark-mode a{
+  background-color:blueviolet ;
+  color: white;
+} 
+.menu button:hover{
+  background-color: #d41323;
+  cursor: pointer;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
       <meta name="description" content="Daiiki">
       <meta charset="UTF-8">
@@ -18,6 +18,7 @@
         <li><a href="my-dreams.html">Mes reves d'appennants</a></li>
         <li><a href="my-passions.html">Mes passions</a></li>
         <li><a target="_blank" href="cv-et-photo/Copie-de-Experience.pdf">Mon CV</a></li>
+        <li><button onclick="themeToggle()">Toggle dark mode</button></li>
       </ul>
     </nav>
    </header>
@@ -36,5 +37,26 @@
     <footer><p> 
       <strong> @copiright Geoffrey Noel </strong>
     </footer> 
+    <script>
+          (function() {
+      let onpageLoad = localStorage.getItem("theme") || "";
+      let element = document.body;
+      element.classList.add(onpageLoad);
+      document.getElementById("theme").textContent =
+        localStorage.getItem("theme") || "light";
+    })();
+
+    function themeToggle() {
+      let element = document.body;
+      element.classList.toggle("dark-mode");
+
+      let theme = localStorage.getItem("theme");
+      if (theme && theme === "dark-mode") {
+        localStorage.setItem("theme", "");
+      } else {
+        localStorage.setItem("theme", "dark-mode");
+      }
+      }
+      </script>
   </body>
 </html>
